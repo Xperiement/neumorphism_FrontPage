@@ -1,0 +1,65 @@
+//Numorphism Shdows
+$nmorphismShadow : 
+-5px -3px 10px #ffffffdc, 
+3px 6px 20px #00000027;
+$nmorphismShadowIn: 
+10px 10px 10px #ffffff, 
+inset -5px -5px 10px #f3f3f3, 
+-3px -6px 20px #0000003b;
+//Transition Duration for shadow
+$duration: 500ms;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f7f7f7;
+}
+
+a{
+    text-decoration: none;
+    color: #444444;
+}
+.navigation{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .navContainer{
+        position: absolute;
+        right: 0;
+        margin-top: 1rem;
+        margin-right: .5rem;
+    }
+}
+.navBtn{
+    display: inline-block;
+    font-size: 1.2rem;
+    //text-transform: uppercase;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    margin-left: .2rem;
+    text-align: center;
+    border-radius: 100px;
+    font-family: Product Sans;
+    border: 3px solid transparent;
+    transition-property: box-shadow,border-color, background, color;
+    transition-duration: $duration;
+}
+.navBtn:focus,
+.navBtn:hover{
+    box-shadow: $nmorphismShadow;
+    background: #ff6a7e;
+    color: white;
+    border-color: #f7f7f7;
+}
+.cAct{
+    box-shadow: $nmorphismShadow;
+    border-color: #f7f7f7;
+    background: #746aff;
+    color: white;
+}
+
+.mainPage{
+    margin-top: 4rem;
+}
