@@ -149,6 +149,8 @@ a {
 .main .container .imgContainer img {
   width: 80%;
   max-width: 320px;
+  -webkit-filter: drop-shadow(5px 5px 5px #00000038);
+          filter: drop-shadow(5px 5px 5px #00000038);
 }
 
 .main .container .title {
